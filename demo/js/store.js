@@ -22,8 +22,8 @@ Ink.store = (function () {
     autoArtwork: true,           // download missing artwork for newly added games
     uiScale: 1,                  // interface size on this screen
     // TV / external display (Android)
-    tvMode: true,                // show Ink on an HDMI / USB-C display when one is connected
-    tvAutoOpen: true,            // open Ink automatically when a display is plugged in
+    tvMode: true,                // show SofaBox on an HDMI / USB-C display when one is connected
+    tvAutoOpen: true,            // open SofaBox automatically when a display is plugged in
     tvScale: 1,                  // interface size on the TV
     tvSafeArea: 3,               // % margin for TVs that cut off the edges (overscan)
     // Console mode / controller
@@ -50,7 +50,7 @@ Ink.store = (function () {
   const SETTINGS_VERSION = 5;
   function upgradeSettings(st) {
     const v = st.settingsVersion || 0;
-    // v2: Ink starts in full screen by default.
+    // v2: SofaBox starts in full screen by default.
     if (v < 2) st.startInConsoleMode = true;
     // v3: closing games through App info is opt-in (it flashed Settings on every switch).
     if (v < 3) st.forceClose = false;
@@ -100,7 +100,7 @@ Ink.store = (function () {
     return Promise.resolve();
   }
 
-  // Save right away if a save is waiting (used before Android moves Ink to/from a TV).
+  // Save right away if a save is waiting (used before Android moves SofaBox to/from a TV).
   function flush() {
     if (!saveTimer) return Promise.resolve();
     return save(true);

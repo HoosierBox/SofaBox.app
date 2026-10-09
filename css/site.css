@@ -1,4 +1,4 @@
-/* otbvision.com — Ink website */
+/* sofabox.app — SofaBox website (by OTB Vision) */
 :root {
   --bg: #07090f;
   --panel: #10141f;
@@ -42,6 +42,7 @@ img { max-width: 100%; display: block; }
 .nav .wrap { display: flex; align-items: center; gap: 24px; height: 68px; }
 .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 20px; text-decoration: none; letter-spacing: -.01em; }
 .brand img { width: 34px; height: 34px; border-radius: 9px; }
+.brand .box { background: linear-gradient(100deg, #4f8cff, #b45cff 60%, #14b8c4); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .brand small { font-weight: 500; color: var(--muted); font-size: 13px; margin-left: 2px; }
 .nav-links { display: flex; gap: 6px; margin-left: auto; align-items: center; }
 .nav-links a { text-decoration: none; color: var(--muted); padding: 8px 12px; border-radius: 10px; font-size: 15px; font-weight: 500; }

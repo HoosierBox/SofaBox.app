@@ -1,4 +1,4 @@
-/* Sample library for the live demo on otbvision.com (runs before Ink's own scripts). */
+/* Sample library for the live demo on sofabox.app (runs before SofaBox's own scripts). */
 (function () {
   var KEY = 'ink-library';
   var VERSION = 1;
@@ -34,7 +34,7 @@
   try {
     var saved = JSON.parse(localStorage.getItem(KEY) || 'null');
     if (!saved || saved.demoVersion !== VERSION) localStorage.setItem(KEY, JSON.stringify(library));
-  } catch (e) { /* storage blocked: Ink starts empty */ }
+  } catch (e) { /* storage blocked: SofaBox starts empty */ }
 
   // In the demo, nothing is installed: say what would happen instead of "launching".
   window.addEventListener('load', function () {
@@ -42,7 +42,7 @@
     var call = Ink.bridge.call;
     Ink.bridge.call = function (method, args) {
       if (method === 'launch' && args && args.game && Ink.ui) {
-        Ink.ui.toast('Demo: in Ink, ' + args.game.title + ' would start now. Press Home on your controller or keyboard to come back.');
+        Ink.ui.toast('Demo: in SofaBox, ' + args.game.title + ' would start now. Press Home on your controller or keyboard to come back.');
       }
       return call(method, args);
     };

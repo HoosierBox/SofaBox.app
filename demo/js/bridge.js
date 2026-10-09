@@ -10,7 +10,7 @@
  */
 window.Ink = window.Ink || {};
 
-// "tv" when the Android app shows Ink on an external display (HDMI / USB-C).
+// "tv" when the Android app shows SofaBox on an external display (HDMI / USB-C).
 Ink.screen = new URLSearchParams(location.search).get('screen') === 'tv' ? 'tv' : 'main';
 document.documentElement.dataset.screen = Ink.screen;
 

@@ -1,4 +1,4 @@
-/* Ink launcher - main screen, library management, settings. */
+/* SofaBox launcher - main screen, library management, settings. */
 (function () {
   const { h, icon, glyph, toast, modal, button, ask, menu, field, textInput, choice, toggle, range, swatches, section } = Ink.ui;
   const store = Ink.store;
@@ -434,10 +434,10 @@
     const pkgClosed = appPackage(g);
     if (res && res.closed && pkgClosed && store.data.lastGameByApp[pkgClosed] === g.id) delete store.data.lastGameByApp[pkgClosed];
     sessionEnded(g.id, res && res.seconds);
-    // Android 14+ only lets Ink fully close a game through the Home button service.
+    // Android 14+ only lets SofaBox fully close a game through the Home button service.
     if (IS_ANDROID && (S().forceClose || force) && res && res.closed === false && res.hint === 'service' && !warnedClose) {
       warnedClose = true;
-      toast('To fully close games, turn on "Ink Home button" in Settings → Android setup.', 'error');
+      toast('To fully close games, turn on "SofaBox Home button" in Settings → Android setup.', 'error');
     }
     if (res && res.error && !quiet) toast(res.error, 'error');
     else if (!quiet) toast(g.title + ' was closed.');
@@ -447,7 +447,7 @@
     const g = store.game(id);
     const sess = store.data.sessions[id];
     if (g) {
-      // Android cannot see other apps, so playtime is counted while Ink is in the background.
+      // Android cannot see other apps, so playtime is counted while SofaBox is in the background.
       if (seconds === undefined && sess && sess.played) seconds = sess.played;
       if (seconds) g.playtime = (g.playtime || 0) + Math.round(seconds);
     }
@@ -544,7 +544,7 @@
       items: [
         IS_ANDROID ? null : { label: 'PC game or program', hint: 'Any .exe, .bat or shortcut', icon: 'play', action: () => editGame(null, { type: 'native' }) },
         IS_ANDROID
-          ? { label: 'Web page or link', hint: 'Web games and sites open full screen in Ink; app links open their app', icon: 'link', action: () => editGame(null, { type: 'url' }) }
+          ? { label: 'Web page or link', hint: 'Web games and sites open full screen in SofaBox; app links open their app', icon: 'link', action: () => editGame(null, { type: 'url' }) }
           : { label: 'Web page, Steam / Epic link', hint: 'https://..., steam://rungameid/..., com.epicgames.launcher://...', icon: 'link', action: () => editGame(null, { type: 'url' }) },
         IS_WINDOWS ? { label: 'Import installed Steam games', icon: 'steam', action: importSteam } : null,
         IS_WINDOWS ? { label: 'Import installed Epic games', icon: 'play', action: importEpic } : null,
@@ -828,18 +828,18 @@
         out.push(field('Launch options', textInput({ value: draft.args, placeholder: 'e.g. -fullscreen', onchange: v => { draft.args = v; } })));
         out.push(field('Start in folder', textInput({ value: draft.workingDir, placeholder: 'Defaults to the program\'s folder', onchange: v => { draft.workingDir = v; } })));
         out.push(field('Watch process', textInput({ value: draft.processName, placeholder: 'Optional: game.exe or the game\'s folder', onchange: v => { draft.processName = v; } }),
-          'Needed when the program is a launcher that starts the real game and exits. Ink uses it to know if the game is still running and to close it.'));
+          'Needed when the program is a launcher that starts the real game and exits. SofaBox uses it to know if the game is still running and to close it.'));
       } else if (draft.type === 'url') {
         const url = textInput({ value: draft.url, placeholder: IS_ANDROID ? 'https://… (or an app link)' : 'https://…  or  steam://rungameid/1245620', onchange: v => { draft.url = v; } });
         out.push(field(IS_ANDROID ? 'Link' : 'Link or shortcut', IS_ANDROID ? url : browseRow(url, async () => {
           const f = await bridge.call('pickFile', { kind: 'shortcut', title: 'Choose a shortcut' });
           if (f) { draft.url = f.path; url.value = f.path; if (!draft.title) { draft.title = baseName(f.path); titleInput.value = draft.title; } }
         }), IS_ANDROID ? 'A web page (cloud gaming, browser games…) or an app link.' : 'A web page, a store link (Steam, Epic, GOG Galaxy, Xbox), a .url/.lnk shortcut, or any file to open.'));
-        out.push(field('Open web pages in', choice({ options: [{ value: 'ink', label: 'Ink, full screen' }, { value: 'browser', label: 'My web browser' }], value: draft.openIn === 'browser' ? 'browser' : 'ink', onchange: v => { draft.openIn = v; } }),
-          'Full screen in Ink works like a game: the Home button brings you back and Ink can close it. Sign-ins are remembered.'));
+        out.push(field('Open web pages in', choice({ options: [{ value: 'ink', label: 'SofaBox, full screen' }, { value: 'browser', label: 'My web browser' }], value: draft.openIn === 'browser' ? 'browser' : 'ink', onchange: v => { draft.openIn = v; } }),
+          'Full screen in SofaBox works like a game: the Home button brings you back and SofaBox can close it. Sign-ins are remembered.'));
         if (!IS_ANDROID) {
           out.push(field('Watch process', textInput({ value: draft.processName, placeholder: 'e.g. eldenring.exe or C:\\Games\\EldenRing', onchange: v => { draft.processName = v; } }),
-            'For store links: store launchers do not report back when the game runs. Give the game\'s exe name or install folder so Ink can detect, resume and close it.'));
+            'For store links: store launchers do not report back when the game runs. Give the game\'s exe name or install folder so SofaBox can detect, resume and close it.'));
         }
       } else if (draft.type === 'android') {
         const label = h('span', { class: 'app-chosen' }, draft.package || 'No app selected');
@@ -970,7 +970,7 @@
     function rows() {
       const list = h('div', { class: 'emu-list' });
       if (!store.data.emulators.length) {
-        list.append(h('div', { class: 'notice' }, 'Emulators are set up once, then every game for that system just needs its ROM file. Ink starts the emulator with the right command-line options (Windows) or launch intent (Android) so the game boots straight away.'));
+        list.append(h('div', { class: 'notice' }, 'Emulators are set up once, then every game for that system just needs its ROM file. SofaBox starts the emulator with the right command-line options (Windows) or launch intent (Android) so the game boots straight away.'));
       }
       store.data.emulators.forEach(e => {
         const count = store.data.games.filter(g => g.emulatorId === e.id).length;
@@ -1137,14 +1137,14 @@
     if (IS_WINDOWS) {
       items.push(
         { label: state.consoleMode ? 'Exit console mode' : 'Enter console mode', hint: 'Fullscreen controller UI', icon: 'expand', action: () => setConsoleMode(!state.consoleMode) },
-        { label: 'Minimize Ink', icon: 'minimize', action: () => bridge.call('power', { action: 'minimize' }) },
-        { label: 'Quit Ink', icon: 'power', action: () => bridge.call('power', { action: 'quit' }) },
+        { label: 'Minimize SofaBox', icon: 'minimize', action: () => bridge.call('power', { action: 'minimize' }) },
+        { label: 'Quit SofaBox', icon: 'power', action: () => bridge.call('power', { action: 'quit' }) },
         { separator: 'PC' },
         { label: 'Sleep', icon: 'moon', action: () => confirmPower('sleep', 'Put the PC to sleep?') },
         { label: 'Restart', icon: 'refresh', action: () => confirmPower('restart', 'Restart the PC?') },
         { label: 'Shut down', icon: 'power', danger: true, action: () => confirmPower('shutdown', 'Shut down the PC?') });
     } else if (IS_ANDROID) {
-      items.push({ label: 'Close Ink', icon: 'power', action: () => bridge.call('power', { action: 'quit' }) });
+      items.push({ label: 'Close SofaBox', icon: 'power', action: () => bridge.call('power', { action: 'quit' }) });
     } else {
       items.push({ label: state.consoleMode ? 'Exit fullscreen' : 'Fullscreen', icon: 'expand', action: () => setConsoleMode(!state.consoleMode) });
     }
@@ -1207,7 +1207,7 @@
 
     if (!IS_ANDROID) {
       body.push(section('Controller & console mode',
-        field('Go fullscreen when a controller connects', toggle({ value: s.autoConsoleMode, onchange: set('autoConsoleMode') }), 'Ink jumps to the front in console mode as soon as a controller is turned on.'),
+        field('Go fullscreen when a controller connects', toggle({ value: s.autoConsoleMode, onchange: set('autoConsoleMode') }), 'SofaBox jumps to the front in console mode as soon as a controller is turned on.'),
         field('Leave fullscreen when controllers disconnect', toggle({ value: s.exitConsoleOnDisconnect, onchange: set('exitConsoleOnDisconnect') })),
         field('Start in full screen', toggle({ value: s.startInConsoleMode, onchange: set('startInConsoleMode') }), 'Like pressing F11. F11 switches full screen on and off at any time.'),
         field('Back + Start = Home', toggle({ value: s.homeChord, onchange: set('homeChord') }), 'Alternative for controllers whose Guide/PS button is not detected.'),
@@ -1216,20 +1216,20 @@
           button('Open Game Bar settings', () => bridge.call('openSystem', { target: 'gamebar' }))) : null));
       body.push(section('System',
         IS_WINDOWS ? field('Start with Windows', toggle({ value: s.launchOnStartup, onchange: set('launchOnStartup') }), 'Starts hidden in the tray and pops up when a controller connects.') : null,
-        IS_WINDOWS ? field('Closing the window keeps Ink in the tray', toggle({ value: s.minimizeToTray, onchange: set('minimizeToTray') })) : null,
+        IS_WINDOWS ? field('Closing the window keeps SofaBox in the tray', toggle({ value: s.minimizeToTray, onchange: set('minimizeToTray') })) : null,
         field('Ask before switching games', toggle({ value: s.confirmStop, onchange: set('confirmStop') }), 'Only one game runs at a time. When off, the running game is closed automatically when you start another.')));
     } else {
       const tvStatus = h('div', { class: 'row wrap' });
       bridge.call('systemInfo', {}).then(info => {
         if (!info) return;
         if (info.tvActive) tvStatus.append(button('Use the phone screen instead', () => bridge.call('setTvMode', { on: false }), { icon: 'minimize' }));
-        else if (info.tvConnected) tvStatus.append(button('Show Ink on the TV now', () => bridge.call('setTvMode', { on: true }), { icon: 'expand' }));
+        else if (info.tvConnected) tvStatus.append(button('Show SofaBox on the TV now', () => bridge.call('setTvMode', { on: true }), { icon: 'expand' }));
         else tvStatus.append(h('span', { class: 'field-help' }, 'No TV or monitor connected right now.'));
       });
       body.push(section('TV & monitor (HDMI / USB-C)',
-        field('Show Ink on the TV when connected', toggle({ value: s.tvMode, onchange: set('tvMode') }), 'Ink moves to the TV and your phone shows a dimmed "Ink is on your TV" screen. Games appear on the TV too. Your phone\'s resolution is never changed: unplug and everything is back to normal.'),
-        field('Open Ink automatically when plugged in', toggle({ value: s.tvAutoOpen, onchange: set('tvAutoOpen') }), 'Needs the "Ink Home button" accessibility service (below) so Ink can notice the cable while it is closed.'),
-        field('TV interface size', range({ min: 0.6, max: 1.6, step: 0.05, value: s.tvScale, format: v => Math.round(v * 100) + '%', onchange: set('tvScale') }), 'Scales Ink to fit your TV. This only affects Ink, not the TV or phone resolution.'),
+        field('Show SofaBox on the TV when connected', toggle({ value: s.tvMode, onchange: set('tvMode') }), 'SofaBox moves to the TV and your phone shows a dimmed "SofaBox is on your TV" screen. Games appear on the TV too. Your phone\'s resolution is never changed: unplug and everything is back to normal.'),
+        field('Open SofaBox automatically when plugged in', toggle({ value: s.tvAutoOpen, onchange: set('tvAutoOpen') }), 'Needs the "SofaBox Home button" accessibility service (below) so SofaBox can notice the cable while it is closed.'),
+        field('TV interface size', range({ min: 0.6, max: 1.6, step: 0.05, value: s.tvScale, format: v => Math.round(v * 100) + '%', onchange: set('tvScale') }), 'Scales SofaBox to fit your TV. This only affects SofaBox, not the TV or phone resolution.'),
         field('TV safe area', range({ min: 0, max: 8, step: 1, value: s.tvSafeArea, format: v => v + '%', onchange: set('tvSafeArea') }), 'Adds a margin if your TV cuts off the edges of the picture.'),
         field('Right now', tvStatus)));
       const checklist = h('div', { class: 'checklist' }, 'Checking…');
@@ -1240,14 +1240,14 @@
           h('span', { class: 'check-mark' }, ok ? '✓' : '!'),
           h('span', { class: 'check-text' }, h('b', null, title), h('small', null, help)),
           ok ? null : button(label, () => bridge.call('openSystem', { target }))));
-        row(info.serviceEnabled, 'Ink Home button service', 'Needed for: controller Home button, opening on TV/DeX automatically, and fully closing games. If the switch is greyed out, do the step below first.', 'Turn on', 'accessibility');
-        if (!info.serviceEnabled) row(false, 'Allow restricted settings', 'Android blocks accessibility for apps installed from an APK. Open Ink\'s App info, tap ⋮ (top right) → "Allow restricted settings", then turn the service on.', 'Open App info', 'inkinfo');
-        row(info.batteryUnrestricted, 'Battery: unrestricted', 'Stops Android (especially Samsung) from putting Ink to sleep, which turns the Home button service off.', 'Allow', 'battery');
-        row(info.isDefaultHome, 'Ink as Home app (optional)', 'The phone\'s Home button always returns to Ink.', 'Choose', 'home');
+        row(info.serviceEnabled, 'SofaBox Home button service', 'Needed for: controller Home button, opening on TV/DeX automatically, and fully closing games. If the switch is greyed out, do the step below first.', 'Turn on', 'accessibility');
+        if (!info.serviceEnabled) row(false, 'Allow restricted settings', 'Android blocks accessibility for apps installed from an APK. Open SofaBox\'s App info, tap ⋮ (top right) → "Allow restricted settings", then turn the service on.', 'Open App info', 'inkinfo');
+        row(info.batteryUnrestricted, 'Battery: unrestricted', 'Stops Android (especially Samsung) from putting SofaBox to sleep, which turns the Home button service off.', 'Allow', 'battery');
+        row(info.isDefaultHome, 'SofaBox as Home app (optional)', 'The phone\'s Home button always returns to SofaBox.', 'Choose', 'home');
       });
       const ACTIONS = [
         { value: '', label: 'Default' }, { value: 'none', label: 'Do nothing' }, { value: 'back', label: 'Back' },
-        { value: 'inkHome', label: 'Ink home' }, { value: 'home', label: 'Android home' }, { value: 'recents', label: 'App switcher' },
+        { value: 'inkHome', label: 'SofaBox home' }, { value: 'home', label: 'Android home' }, { value: 'recents', label: 'App switcher' },
         { value: 'notifications', label: 'Notifications' }, { value: 'playPause', label: 'Play / pause' },
         { value: 'next', label: 'Next track' }, { value: 'previous', label: 'Previous track' },
         { value: 'volumeUp', label: 'Volume up' }, { value: 'volumeDown', label: 'Volume down' },
@@ -1263,12 +1263,12 @@
       };
       body.push(section('Controller',
         field('Hold Guide for mouse mode', toggle({ value: s.guideHoldMouse, onchange: set('guideHoldMouse') }),
-          'Hold the Xbox / PS button for 3 seconds to switch between controller and mouse mode (a short press still returns to Ink). Mouse mode: left stick moves the pointer, A clicks, X long-presses, B goes back, right stick scrolls, Y play / pause, LB / RB previous / next track, D-pad up / down volume, View app switcher, Menu notifications.'),
+          'Hold the Xbox / PS button for 3 seconds to switch between controller and mouse mode (a short press still returns to SofaBox). Mouse mode: left stick moves the pointer, A clicks, X long-presses, B goes back, right stick scrolls, Y play / pause, LB / RB previous / next track, D-pad up / down volume, View app switcher, Menu notifications.'),
         field('Pointer speed', range({ min: 0.4, max: 2.5, step: 0.1, value: s.mouseSpeed, format: v => Math.round(v * 100) + '%', onchange: set('mouseSpeed') }), 'Used the next time mouse mode turns on.'),
         ...BUTTONS.map(([key, label]) => field(label, choice({ options: ACTIONS, value: (s.buttonMap || {})[key] || '', onchange: mapButton(key) }))),
-        h('div', { class: 'field-help' }, 'Mapped buttons work everywhere, inside games too (the game no longer sees them). Needs the Ink Home button service. Triggers, sticks and the D-pad can\'t be mapped.')));
+        h('div', { class: 'field-help' }, 'Mapped buttons work everywhere, inside games too (the game no longer sees them). Needs the SofaBox Home button service. Triggers, sticks and the D-pad can\'t be mapped.')));
       body.push(section('Android setup', checklist,
-        field('Close the old game when switching', toggle({ value: !!s.forceClose, onchange: set('forceClose') }), 'Ink closes the previous game behind a short "Switching games" screen (it presses Force stop on its App info page, the only way on Android 14+). Needs the Home button service. Games from the same emulator are always closed first, because emulators cannot load a new game while the old one is running.')));
+        field('Close the old game when switching', toggle({ value: !!s.forceClose, onchange: set('forceClose') }), 'SofaBox closes the previous game behind a short "Switching games" screen (it presses Force stop on its App info page, the only way on Android 14+). Needs the Home button service. Games from the same emulator are always closed first, because emulators cannot load a new game while the old one is running.')));
       body.push(section('Games',
         field('Ask before switching games', toggle({ value: s.confirmStop, onchange: set('confirmStop') }), 'Only one game runs at a time. When off, the running game is closed automatically when you start another.')));
     }
@@ -1286,7 +1286,7 @@
             store.replace(parsed);
             applyTheme(); pushSettings(); closeAllLayers(); renderHome({ focusFirst: true });
             toast('Library imported.');
-          } catch (e) { toast('That file is not an Ink library.', 'error'); }
+          } catch (e) { toast('That file is not a SofaBox library.', 'error'); }
         }, { icon: 'folder' }),
         button('Reset settings', async () => {
           const ok = await ask({ title: 'Reset all settings?', message: 'Games and emulators are kept.', buttons: [{ id: 'yes', label: 'Reset', variant: 'danger' }, { id: 'no', label: 'Cancel' }] });
@@ -1295,8 +1295,8 @@
           store.save(); applyTheme(); pushSettings(); closeAllLayers(); renderHome();
         }, { icon: 'refresh' }))),
       (() => {
-        const about = h('div', { class: 'about' }, 'Ink launcher · ' + bridge.platform);
-        bridge.call('systemInfo', {}).then(info => { if (info && info.version) about.textContent = 'Ink launcher ' + info.version + ' · ' + bridge.platform; }).catch(() => {});
+        const about = h('div', { class: 'about' }, 'SofaBox launcher · ' + bridge.platform);
+        bridge.call('systemInfo', {}).then(info => { if (info && info.version) about.textContent = 'SofaBox launcher ' + info.version + ' · ' + bridge.platform; }).catch(() => {});
         return about;
       })());
 
@@ -1365,14 +1365,14 @@
       renderPadStatus();
       if (state.controllers > prev) toast('Controller connected');
     });
-    // Android: count time spent in the game while Ink is in the background.
+    // Android: count time spent in the game while SofaBox is in the background.
     let pausedAt = 0;
-    // Only count it when Ink went to the background because of a game (not a file picker).
-    // Keep the first pause if Ink was briefly resumed in between (see app-resume).
+    // Only count it when SofaBox went to the background because of a game (not a file picker).
+    // Keep the first pause if SofaBox was briefly resumed in between (see app-resume).
     bridge.on('app-pause', () => { if (!pausedAt) pausedAt = state.awayForGame ? Date.now() : 0; });
     bridge.on('app-resume', () => {
       if (!state.awayForGame) return;
-      // DeX pauses Ink when a game starts, then resumes it until the game's window is
+      // DeX pauses SofaBox when a game starts, then resumes it until the game's window is
       // up (seconds, for an emulator). That is not the player coming back.
       if (Date.now() - state.launchedAt < 2000) return;
       state.awayForGame = false;
