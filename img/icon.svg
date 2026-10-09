@@ -1,9 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#151b33"/><stop offset="1" stop-color="#07090f"/></linearGradient>
-    <linearGradient id="sofa" gradientUnits="userSpaceOnUse" x1="78" y1="126" x2="434" y2="398"><stop offset="0" stop-color="#4f8cff"/><stop offset="0.55" stop-color="#b45cff"/><stop offset="1" stop-color="#14b8c4"/></linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#161c36"/><stop offset="1" stop-color="#06080e"/></linearGradient>
+    <linearGradient id="bright" gradientUnits="userSpaceOnUse" x1="150" y1="90" x2="420" y2="400"><stop offset="0" stop-color="#5b8fff"/><stop offset="0.5" stop-color="#b45cff"/><stop offset="1" stop-color="#14c4cf"/></linearGradient>
+    <linearGradient id="dark" gradientUnits="userSpaceOnUse" x1="100" y1="90" x2="300" y2="430"><stop offset="0" stop-color="#3559c9"/><stop offset="1" stop-color="#6a2fc0"/></linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset=".45" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="20" result="b"/><feColorMatrix in="b" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 .5 0"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
   <rect width="512" height="512" rx="112" fill="url(#bg)"/>
-  <path fill="url(#sofa)" d="M178,126h156a46,46 0 0 1 46,46v66a46,46 0 0 1 -46,46h-156a46,46 0 0 1 -46,-46v-66a46,46 0 0 1 46,-46zM123,208h0a45,45 0 0 1 45,45v72a45,45 0 0 1 -45,45h0a45,45 0 0 1 -45,-45v-72a45,45 0 0 1 45,-45zM389,208h0a45,45 0 0 1 45,45v72a45,45 0 0 1 -45,45h0a45,45 0 0 1 -45,-45v-72a45,45 0 0 1 45,-45zM117,362h12a9,9 0 0 1 9,9v18a9,9 0 0 1 -9,9h-12a9,9 0 0 1 -9,-9v-18a9,9 0 0 1 9,-9zM383,362h12a9,9 0 0 1 9,9v18a9,9 0 0 1 -9,9h-12a9,9 0 0 1 -9,-9v-18a9,9 0 0 1 9,-9z"/>
-  <path fill="#fff" d="M172,276h168a26,26 0 0 1 26,26v28a26,26 0 0 1 -26,26h-168a26,26 0 0 1 -26,-26v-28a26,26 0 0 1 26,-26zM239,160a17,17 0 1 1 34,0a17,17 0 1 1 -34,0zM239,238a17,17 0 1 1 34,0a17,17 0 1 1 -34,0zM200,199a17,17 0 1 1 34,0a17,17 0 1 1 -34,0zM278,199a17,17 0 1 1 34,0a17,17 0 1 1 -34,0z"/>
+  <g filter="url(#glow)">
+    <path fill="url(#dark)" d="M150,92H168A20,20 0 0 1 188,112V376A20,20 0 0 1 168,396H142A30,30 0 0 1 112,366V130A38,38 0 0 1 150,92Z"/>
+    <path fill="url(#bright)" d="M214,108H290A58,58 0 0 1 348,166V182A48,48 0 0 1 300,230H214A16,16 0 0 1 198,214V124A16,16 0 0 1 214,108Z"/>
+    <path fill="url(#shine)" d="M214,108H290A58,58 0 0 1 348,166V182A48,48 0 0 1 300,230H214A16,16 0 0 1 198,214V124A16,16 0 0 1 214,108Z"/>
+    <path fill="url(#bright)" d="M214,242H348A64,64 0 0 1 412,306V324A58,58 0 0 1 354,382H214A16,16 0 0 1 198,366V258A16,16 0 0 1 214,242Z"/>
+    <path fill="url(#shine)" d="M214,242H348A64,64 0 0 1 412,306V324A58,58 0 0 1 354,382H214A16,16 0 0 1 198,366V258A16,16 0 0 1 214,242Z"/>
+    <path fill="url(#dark)" stroke="url(#dark)" stroke-width="6" stroke-linejoin="round" d="M126,390h36l-26.799999999999997,40h-16.2zM366,376h36l5.200000000000001,54h-16.2z"/>
+  </g>
 </svg>
