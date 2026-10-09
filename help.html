@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Help — Ink | OTB Vision</title>
+  <meta name="description" content="Set up Ink on Windows and Android: controllers, the Home button, emulators, artwork and TV mode.">
+  <meta name="theme-color" content="#07090f">
+  <link rel="icon" href="img/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <div class="glow"></div>
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="img/icon.png" alt="">Ink <small>by OTB Vision</small></a>
+      <nav class="nav-links">
+        <a href="./#features">Features</a>
+        <a href="help.html" aria-current="page">Help</a>
+        <a href="privacy.html">Privacy</a>
+        <a class="btn small primary" href="./#download">Download</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <article class="wrap prose">
+      <h1>Help</h1>
+      <p class="updated">Getting the most out of Ink on Windows and Android.</p>
+      <nav class="toc">
+        <a href="#windows">Windows setup</a>
+        <a href="#android">Android setup</a>
+        <a href="#emulators">Emulators</a>
+        <a href="#artwork">Artwork</a>
+        <a href="#tv">TV &amp; DeX</a>
+        <a href="#controls">Controls</a>
+      </nav>
+
+      <h2 id="windows">Windows setup</h2>
+      <ol>
+        <li>Run the installer (or the portable version). Ink opens in full screen — press <code>F11</code> to switch between full screen and a window.</li>
+        <li>Press <strong>+</strong> to add games: import your <strong>Steam</strong> or <strong>Epic</strong> library, add any PC program, or add a web page.</li>
+        <li><strong>Xbox controllers:</strong> the Guide button brings you back to Ink from any game. To stop Windows from also opening Game Bar, go to <em>Settings → Gaming → Xbox Game Bar</em> and turn off <em>"Open Xbox Game Bar using this button on a controller"</em>.</li>
+        <li><strong>PlayStation and other controllers:</strong> turn on <em>Back + Start = Home</em> in Ink's settings, or use the keyboard shortcut <code>Ctrl+Shift+Home</code>.</li>
+        <li>Want Ink ready whenever you pick up a controller? Turn on <em>Start with Windows</em>. Ink waits in the tray and jumps to full screen when a controller connects.</li>
+      </ol>
+
+      <h2 id="android">Android setup</h2>
+      <p>Ink works right after installing. These optional steps make it feel like a console:</p>
+      <ol>
+        <li><strong>Allow restricted settings</strong> (needed for apps installed outside Google Play): <em>Settings → Apps → Ink → ⋮ → Allow restricted settings</em>.</li>
+        <li><strong>Turn on the Home button service:</strong> <em>Settings → Accessibility → Installed apps → Ink Home button</em>. This lets your controller's Home button (or Select + Start) bring you back to Ink, opens Ink when you plug into a TV or DeX, and closes the old game when you switch.</li>
+        <li><strong>Battery:</strong> <em>Settings → Apps → Ink → Battery → Unrestricted</em>. On Samsung, also add Ink to <em>Never sleeping apps</em>.</li>
+        <li><strong>Optional:</strong> make Ink your <em>Home app</em> so the phone's Home button always goes to Ink.</li>
+      </ol>
+      <div class="callout">Ink's <em>Settings → Android setup</em> shows a ✓ for each step and has a button to open the right Android screen.</div>
+
+      <h2 id="emulators">Emulators</h2>
+      <ol>
+        <li>Install the emulator you want (RetroArch, Dolphin, NetherSX2, DuckStation, PPSSPP, Eden …) and make sure it runs a game on its own.</li>
+        <li>In Ink: <em>+ → Manage emulators → Add emulator</em> and pick the preset. On Windows, point it to the emulator's <code>.exe</code>.</li>
+        <li><em>+ → Scan a ROM folder</em> and choose the folder with your games. Each game gets a tile.</li>
+      </ol>
+      <p><strong>Tips</strong></p>
+      <ul>
+        <li><strong>RetroArch on Android</strong> needs <em>All files access</em> (in RetroArch's app settings) and the right core downloaded in RetroArch first.</li>
+        <li>Name ROMs like <code>Super Mario World (USA).sfc</code> to get cover art automatically.</li>
+        <li>If an emulator has no preset, choose <em>Custom</em>. On Windows you can add a <em>post-launch macro</em> that presses keys (for example <code>3000 {F11}</code> for full screen).</li>
+      </ul>
+
+      <h2 id="artwork">Artwork</h2>
+      <p>Steam games and many emulator games get artwork automatically. For everything else (Switch, Epic, Android …):</p>
+      <ol>
+        <li>Sign in at <a href="https://www.steamgriddb.com" target="_blank" rel="noopener">steamgriddb.com</a> (free), then open <em>Preferences → API</em> and generate a key.</li>
+        <li>Paste it in Ink: <em>Settings → Artwork</em>, then press <em>Find missing artwork now</em>.</li>
+      </ol>
+      <p>You can also set any image yourself: press <strong>X</strong> on a game → <em>Change cover art</em>.</p>
+
+      <h2 id="tv">TV &amp; Samsung DeX</h2>
+      <ul>
+        <li><strong>TV (HDMI / USB-C):</strong> plug your phone in and Ink moves to the TV, scaled to fit. Your phone's resolution is never changed. Adjust <em>TV interface size</em> and <em>TV safe area</em> in settings.</li>
+        <li><strong>Samsung DeX:</strong> Ink runs as an app on the DeX desktop and can open automatically when DeX starts (needs the Home button service).</li>
+      </ul>
+
+      <h2 id="controls">Controls</h2>
+      <ul>
+        <li><strong>A / ✕</strong> — play or resume · <strong>B / ○</strong> — back</li>
+        <li><strong>X / □</strong> — game options (edit, cover art, favorite, quit) · <strong>Y / △</strong> — add games</li>
+        <li><strong>LB / RB</strong> — switch tabs · <strong>Start</strong> — settings · <strong>Select</strong> — search</li>
+        <li><strong>Home / Guide</strong> — back to Ink from any game</li>
+        <li>Keyboard: arrows or <code>WASD</code>, <code>Enter</code>, <code>Esc</code>. Mouse: click, scroll the wheel or drag the tiles; right-click a tile for options.</li>
+      </ul>
+
+      <h2>Still stuck?</h2>
+      <p>Email <a href="mailto:support@otbvision.com">support@otbvision.com</a> with your device, what you tried and a screenshot if you can.</p>
+    </article>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© <span id="year">2026</span> OTB Vision</span>
+      <nav>
+        <a href="help.html">Help</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="mailto:support@otbvision.com">support@otbvision.com</a>
+      </nav>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
