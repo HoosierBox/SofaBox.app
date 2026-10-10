@@ -55,9 +55,12 @@
     <!-- ================= demo -->
     <div class="wrap demo" id="demo">
       <div class="frame">
-        <iframe src="demo/index.html" title="SofaBox live demo" loading="lazy" allow="gamepad; fullscreen"></iframe>
+        <div class="screen" id="demo-screen">
+          <iframe src="demo/index.html" title="SofaBox live demo" loading="lazy" allow="gamepad; fullscreen"></iframe>
+        </div>
       </div>
-      <p class="demo-note">This is the real SofaBox interface. Click inside, then use the arrow keys or <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd>, <kbd>Enter</kbd> to play, <kbd>X</kbd> for options, <kbd>M</kbd> for settings — or plug in a controller. <a href="demo/index.html" target="_blank" rel="noopener">Open full screen ↗</a></p>
+      <p class="demo-note only-pointer">This is the real SofaBox interface. Click inside, then use the arrow keys or <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd>, <kbd>Enter</kbd> to play, <kbd>X</kbd> for options, <kbd>M</kbd> for settings — or plug in a controller. <a href="demo/index.html" target="_blank" rel="noopener">Open full screen ↗</a></p>
+      <p class="demo-note only-touch">This is the real SofaBox interface, shrunk to fit your screen. Tap a game to try it and swipe the row to scroll. For the full-size version, <a href="demo/index.html" target="_blank" rel="noopener">open it full screen ↗</a> and turn your phone sideways.</p>
     </div>
 
     <!-- ================= features -->
@@ -200,5 +203,31 @@
     </div>
   </footer>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    // On narrow screens (phones held upright) the demo runs at a tablet-sized width and is
+    // shrunk to fit, so it shows the full console layout like a small TV instead of a
+    // cramped phone layout. Taps still work: the browser maps them through the scaling.
+    (function () {
+      var screen = document.getElementById('demo-screen');
+      var frame = screen && screen.querySelector('iframe');
+      if (!frame) return;
+      var DESIGN_WIDTH = 900;
+      function fit() {
+        var w = screen.clientWidth, h = screen.clientHeight;
+        if (!w) return;
+        if (w >= DESIGN_WIDTH) {
+          frame.style.width = frame.style.height = frame.style.transform = '';
+          return;
+        }
+        var scale = w / DESIGN_WIDTH;
+        frame.style.width = DESIGN_WIDTH + 'px';
+        frame.style.height = (h / scale) + 'px';
+        frame.style.transform = 'scale(' + scale + ')';
+      }
+      fit();
+      if (window.ResizeObserver) new ResizeObserver(fit).observe(screen);
+      else window.addEventListener('resize', fit);
+    })();
+  </script>
 </body>
 </html>
