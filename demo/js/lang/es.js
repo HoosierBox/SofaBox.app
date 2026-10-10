@@ -215,4 +215,6 @@ Ink.i18n.add('es', [
 "Tu biblioteca está vacía", "Diseño de tu biblioteca", "Tus juegos de Steam ya están en la biblioteca.",
 // 477
 "Imagen de fondo", "Una imagen tuya detrás de toda la biblioteca. Pro añade colores de acento, estilos de fondo y arte para cada juego.", "Quitar todas las imágenes", "Quita las portadas y los fondos de todos los juegos para empezar de cero. Tus juegos siguen en la biblioteca.", "¿Quitar todas las imágenes?", "Se quitan las portadas y los fondos de todos tus juegos. Tus juegos siguen en la biblioteca.", "Imágenes quitadas de todos los juegos.", "Imagen de fondo quitada.",
+// 485
+"Te permite controlar el teléfono con el mando: botón Home, modo ratón, asignación de botones, abrir en TV/DeX automáticamente y cerrar juegos por completo.",
 ]);

@@ -215,4 +215,6 @@ Ink.i18n.add('nl', [
 "Je bibliotheek is leeg", "Indeling van je bibliotheek", "Je Steam-games staan al in de bibliotheek.",
 // 477
 "Achtergrondafbeelding", "Eén eigen afbeelding achter de hele bibliotheek. Pro voegt accentkleuren, achtergrondstijlen en afbeeldingen per game toe.", "Alle afbeeldingen verwijderen", "Verwijdert de covers en achtergronden van alle games, zodat je opnieuw kunt beginnen. Je games blijven in je bibliotheek.", "Alle afbeeldingen verwijderen?", "De covers en achtergronden van al je games worden verwijderd. Je games blijven in je bibliotheek.", "Afbeeldingen van alle games verwijderd.", "Achtergrondafbeelding verwijderd.",
+// 485
+"Bedien je telefoon met je controller: Home-knop, muismodus, knoptoewijzing, automatisch openen op tv/DeX en games volledig sluiten.",
 ]);

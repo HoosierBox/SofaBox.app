@@ -215,4 +215,6 @@ Ink.i18n.add('de', [
 "Deine Bibliothek ist leer", "Layout deiner Bibliothek", "Deine Steam-Spiele sind schon in der Bibliothek.",
 // 477
 "Hintergrundbild", "Ein eigenes Bild hinter der ganzen Bibliothek. Pro bietet zusätzlich Akzentfarben, Hintergrundstile und Bilder für jedes Spiel.", "Alle Bilder entfernen", "Entfernt die Cover und Hintergrundbilder aller Spiele, damit du neu anfangen kannst. Deine Spiele bleiben in der Bibliothek.", "Alle Bilder entfernen?", "Die Cover und Hintergrundbilder aller deiner Spiele werden entfernt. Deine Spiele bleiben in der Bibliothek.", "Bilder aller Spiele entfernt.", "Hintergrundbild entfernt.",
+// 485
+"Steuere dein Handy mit dem Controller: Home-Taste, Mausmodus, Tastenbelegung, automatisches Öffnen auf TV/DeX und vollständiges Schließen von Spielen.",
 ]);

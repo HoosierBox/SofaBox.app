@@ -488,4 +488,5 @@ Ink.I18N_EN = [
  "The covers and background images of all your games are removed. Your games stay in your library.",
  "Artwork removed from all games.",
  "Background image removed.",
+ "Lets you control your phone with your controller: Home button, mouse mode, button mapping, opening on TV/DeX automatically, and fully closing games.",
 ];

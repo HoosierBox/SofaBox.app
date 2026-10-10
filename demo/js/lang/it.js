@@ -215,4 +215,6 @@ Ink.i18n.add('it', [
 "La tua libreria è vuota", "Layout della tua libreria", "I tuoi giochi Steam sono già nella libreria.",
 // 477
 "Immagine di sfondo", "Una tua immagine dietro tutta la libreria. Pro aggiunge colori d’accento, stili di sfondo e immagini per ogni gioco.", "Rimuovi tutte le immagini", "Rimuove copertine e sfondi di tutti i giochi, per ricominciare da capo. I tuoi giochi restano nella libreria.", "Rimuovere tutte le immagini?", "Copertine e sfondi di tutti i tuoi giochi vengono rimossi. I tuoi giochi restano nella libreria.", "Immagini rimosse da tutti i giochi.", "Immagine di sfondo rimossa.",
+// 485
+"Ti permette di controllare il telefono con il controller: tasto Home, modalità mouse, mappatura tasti, apertura automatica su TV/DeX e chiusura completa dei giochi.",
 ]);

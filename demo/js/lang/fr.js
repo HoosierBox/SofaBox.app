@@ -215,4 +215,6 @@ Ink.i18n.add('fr', [
 "Votre bibliothèque est vide", "Disposition de votre bibliothèque", "Vos jeux Steam sont déjà dans la bibliothèque.",
 // 477
 "Image de fond", "Une image à vous derrière toute la bibliothèque. Pro ajoute les couleurs d’accent, les styles de fond et les illustrations de chaque jeu.", "Supprimer toutes les illustrations", "Supprime les jaquettes et les images de fond de tous les jeux, pour repartir de zéro. Vos jeux restent dans la bibliothèque.", "Supprimer toutes les illustrations ?", "Les jaquettes et les images de fond de tous vos jeux sont supprimées. Vos jeux restent dans la bibliothèque.", "Illustrations supprimées de tous les jeux.", "Image de fond supprimée.",
+// 485
+"Vous permet de contrôler le téléphone avec la manette : bouton Home, mode souris, attribution des boutons, ouverture automatique sur TV/DeX et fermeture complète des jeux.",
 ]);

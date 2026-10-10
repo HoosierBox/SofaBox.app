@@ -215,4 +215,6 @@ Ink.i18n.add('pl', [
 "Twoja biblioteka jest pusta", "Układ twojej biblioteki", "Twoje gry ze Steam są już w bibliotece.",
 // 477
 "Obraz tła", "Jeden własny obraz za całą biblioteką. Pro dodaje kolory akcentu, style tła i grafiki dla każdej gry.", "Usuń wszystkie grafiki", "Usuwa okładki i tła wszystkich gier, aby zacząć od nowa. Gry pozostają w bibliotece.", "Usunąć wszystkie grafiki?", "Okładki i tła wszystkich gier zostaną usunięte. Gry pozostają w bibliotece.", "Usunięto grafiki ze wszystkich gier.", "Usunięto obraz tła.",
+// 485
+"Pozwala sterować telefonem kontrolerem: przycisk Home, tryb myszy, przypisanie przycisków, automatyczne otwieranie na TV/DeX i pełne zamykanie gier.",
 ]);

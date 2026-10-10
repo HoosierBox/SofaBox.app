@@ -215,4 +215,6 @@ Ink.i18n.add('pt', [
 "Sua biblioteca está vazia", "Layout da sua biblioteca", "Seus jogos da Steam já estão na biblioteca.",
 // 477
 "Imagem de fundo", "Uma imagem sua atrás de toda a biblioteca. O Pro adiciona cores de destaque, estilos de fundo e arte para cada jogo.", "Remover todas as imagens", "Remove as capas e os fundos de todos os jogos para recomeçar do zero. Seus jogos continuam na biblioteca.", "Remover todas as imagens?", "As capas e os fundos de todos os seus jogos serão removidos. Seus jogos continuam na biblioteca.", "Imagens removidas de todos os jogos.", "Imagem de fundo removida.",
+// 485
+"Permite controlar o celular com o controle: botão Home, modo mouse, mapeamento de botões, abrir na TV/DeX automaticamente e fechar jogos por completo.",
 ]);
