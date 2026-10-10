@@ -4,7 +4,7 @@ Ink.i18n.add('fr', [
 "★ Pro", "★ PRO", "★ SofaBox Pro", "✓ Le service du bouton Home est activé.", "Horloge 24 heures",
 "Une page web (jeux dans le cloud, jeux par navigateur…) ou un lien d’app.",
 "Une page web, un lien de boutique (Steam, Epic, GOG Galaxy, Xbox), un raccourci .url/.lnk ou n’importe quel fichier.",
-"Accélération", "Couleur d’accent", "Couleurs d’accent, fonds et vos propres images de fond",
+"Accélération", "Couleur d’accent", "Couleurs d’accent, styles de fond et illustrations pour chaque jeu",
 // 10
 "Activité", "Ajouter", "Ajouter un jeu", "Tout ajouter", "Ajouter une app Android", "Ajouter un émulateur",
 "Ajoutez d’abord un émulateur, puis analysez son dossier de ROM.", "Ajouter des apps Android", "Ajouter l’émulateur", "Ajouter le jeu",
@@ -132,7 +132,7 @@ Ink.i18n.add('fr', [
 // 290
 "Collez votre clé ici", "Jeu / programme PC", "Jeu ou programme PC",
 "Jeux PC, Steam et Epic en un clic, émulateurs et jeux web.",
-"Choisissez une couleur d’accent et un style de fond, mettez votre propre photo derrière la bibliothèque et un fond pour chaque jeu.",
+"Choisissez une couleur d’accent et un style de fond, et affichez l’illustration de chaque jeu derrière la bibliothèque.",
 "Choisissez un autre onglet ou ajoutez des jeux.", "Choisir une app", "Plateforme", "Étiquette de plateforme", "Jouer",
 // 300
 "Lecture / pause", "Lecture / pause musique", "Joué à l’instant", "Joueur",
@@ -213,4 +213,6 @@ Ink.i18n.add('fr', [
 // 470
 "Vous avez SofaBox Pro. Merci de soutenir SofaBox !", "Tout est prêt !", "Vos couleurs et fonds", "Vos jeux Epic sont déjà dans la bibliothèque.",
 "Votre bibliothèque est vide", "Disposition de votre bibliothèque", "Vos jeux Steam sont déjà dans la bibliothèque.",
+// 477
+"Image de fond", "Une image à vous derrière toute la bibliothèque. Pro ajoute les couleurs d’accent, les styles de fond et les illustrations de chaque jeu.", "Supprimer toutes les illustrations", "Supprime les jaquettes et les images de fond de tous les jeux, pour repartir de zéro. Vos jeux restent dans la bibliothèque.", "Supprimer toutes les illustrations ?", "Les jaquettes et les images de fond de tous vos jeux sont supprimées. Vos jeux restent dans la bibliothèque.", "Illustrations supprimées de tous les jeux.", "Image de fond supprimée.",
 ]);

@@ -4,7 +4,7 @@ Ink.i18n.add('nl', [
 "★ Pro", "★ PRO", "★ SofaBox Pro", "✓ De Home-knopdienst staat aan.", "24-uursklok",
 "Een webpagina (cloudgaming, browsergames…) of een app-link.",
 "Een webpagina, een winkellink (Steam, Epic, GOG Galaxy, Xbox), een .url/.lnk-snelkoppeling of elk ander bestand.",
-"Versnelling", "Accentkleur", "Accentkleuren, achtergronden en je eigen achtergrondafbeeldingen",
+"Versnelling", "Accentkleur", "Accentkleuren, achtergrondstijlen en afbeeldingen per game",
 // 10
 "Activiteit", "Toevoegen", "Game toevoegen", "Alles toevoegen", "Android-app toevoegen", "Emulator toevoegen",
 "Voeg eerst een emulator toe en scan dan de ROM-map ervan.", "Android-apps toevoegen", "Emulator toevoegen", "Game toevoegen",
@@ -132,7 +132,7 @@ Ink.i18n.add('nl', [
 // 290
 "Plak je sleutel hier", "Pc-game / programma", "Pc-game of programma",
 "Pc-games, Steam en Epic met één klik, emulators en webgames.",
-"Kies een accentkleur en achtergrondstijl, zet je eigen foto achter de bibliotheek en kies per game een achtergrond.",
+"Kies een accentkleur en achtergrondstijl, en toon de afbeelding van elke game achter de bibliotheek.",
 "Kies een ander tabblad of voeg meer games toe.", "App kiezen", "Platform", "Platformlabel", "Spelen",
 // 300
 "Afspelen / pauzeren", "Muziek afspelen / pauzeren", "Net gespeeld", "Speler",
@@ -213,4 +213,6 @@ Ink.i18n.add('nl', [
 // 470
 "Je hebt SofaBox Pro. Bedankt voor je steun aan SofaBox!", "Alles klaar!", "Jouw kleuren en achtergronden", "Je Epic-games staan al in de bibliotheek.",
 "Je bibliotheek is leeg", "Indeling van je bibliotheek", "Je Steam-games staan al in de bibliotheek.",
+// 477
+"Achtergrondafbeelding", "Eén eigen afbeelding achter de hele bibliotheek. Pro voegt accentkleuren, achtergrondstijlen en afbeeldingen per game toe.", "Alle afbeeldingen verwijderen", "Verwijdert de covers en achtergronden van alle games, zodat je opnieuw kunt beginnen. Je games blijven in je bibliotheek.", "Alle afbeeldingen verwijderen?", "De covers en achtergronden van al je games worden verwijderd. Je games blijven in je bibliotheek.", "Afbeeldingen van alle games verwijderd.", "Achtergrondafbeelding verwijderd.",
 ]);

@@ -4,7 +4,7 @@ Ink.i18n.add('de', [
 "★ Pro", "★ PRO", "★ SofaBox Pro", "✓ Der Home-Tasten-Dienst ist aktiv.", "24-Stunden-Uhr",
 "Eine Webseite (Cloud-Gaming, Browserspiele…) oder ein App-Link.",
 "Eine Webseite, ein Store-Link (Steam, Epic, GOG Galaxy, Xbox), eine .url/.lnk-Verknüpfung oder eine beliebige Datei.",
-"Beschleunigung", "Akzentfarbe", "Akzentfarben, Hintergründe und eigene Hintergrundbilder",
+"Beschleunigung", "Akzentfarbe", "Akzentfarben, Hintergrundstile und Bilder für jedes Spiel",
 // 10
 "Aktivität", "Hinzufügen", "Spiel hinzufügen", "Alle hinzufügen", "Android-App hinzufügen", "Emulator hinzufügen",
 "Füge zuerst einen Emulator hinzu und durchsuche dann seinen ROM-Ordner.", "Android-Apps hinzufügen", "Emulator hinzufügen", "Spiel hinzufügen",
@@ -132,7 +132,7 @@ Ink.i18n.add('de', [
 // 290
 "Schlüssel hier einfügen", "PC-Spiel / Programm", "PC-Spiel oder Programm",
 "PC-Spiele, Steam und Epic mit einem Klick, Emulatoren und Webspiele.",
-"Wähle eine Akzentfarbe und einen Hintergrundstil, nutze dein eigenes Foto hinter der Bibliothek und lege für jedes Spiel einen Hintergrund fest.",
+"Wähle eine Akzentfarbe und einen Hintergrundstil und zeige hinter der Bibliothek die Bilder des jeweiligen Spiels.",
 "Wähle einen anderen Tab oder füge weitere Spiele hinzu.", "App wählen", "Plattform", "Plattform-Bezeichnung", "Spielen",
 // 300
 "Wiedergabe / Pause", "Musik abspielen / pausieren", "Gerade eben gespielt", "Spieler",
@@ -213,4 +213,6 @@ Ink.i18n.add('de', [
 // 470
 "Du hast SofaBox Pro. Danke, dass du SofaBox unterstützt!", "Alles bereit!", "Deine Farben & Hintergründe", "Deine Epic-Spiele sind schon in der Bibliothek.",
 "Deine Bibliothek ist leer", "Layout deiner Bibliothek", "Deine Steam-Spiele sind schon in der Bibliothek.",
+// 477
+"Hintergrundbild", "Ein eigenes Bild hinter der ganzen Bibliothek. Pro bietet zusätzlich Akzentfarben, Hintergrundstile und Bilder für jedes Spiel.", "Alle Bilder entfernen", "Entfernt die Cover und Hintergrundbilder aller Spiele, damit du neu anfangen kannst. Deine Spiele bleiben in der Bibliothek.", "Alle Bilder entfernen?", "Die Cover und Hintergrundbilder aller deiner Spiele werden entfernt. Deine Spiele bleiben in der Bibliothek.", "Bilder aller Spiele entfernt.", "Hintergrundbild entfernt.",
 ]);

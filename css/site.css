@@ -40,7 +40,7 @@ img { max-width: 100%; display: block; }
 /* ---------- nav */
 .nav { position: sticky; top: 0; z-index: 10; backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); background: rgba(7, 9, 15, .72); border-bottom: 1px solid var(--line); }
 .nav .wrap { display: flex; align-items: center; gap: 24px; height: 68px; }
-.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 20px; text-decoration: none; letter-spacing: -.01em; }
+.brand { display: flex; flex-shrink: 0; white-space: nowrap; align-items: center; gap: 10px; font-weight: 700; font-size: 20px; text-decoration: none; letter-spacing: -.01em; }
 .brand img { width: 34px; height: 34px; border-radius: 9px; }
 .brand .box { background: linear-gradient(100deg, #4f8cff, #b45cff 60%, #14b8c4); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .brand small { font-weight: 500; color: var(--muted); font-size: 13px; margin-left: 2px; }

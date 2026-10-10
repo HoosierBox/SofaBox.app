@@ -4,7 +4,7 @@ Ink.i18n.add('pl', [
 "★ Pro", "★ PRO", "★ SofaBox Pro", "✓ Usługa przycisku Home jest włączona.", "Zegar 24-godzinny",
 "Strona internetowa (granie w chmurze, gry w przeglądarce…) lub link do aplikacji.",
 "Strona internetowa, link do sklepu (Steam, Epic, GOG Galaxy, Xbox), skrót .url/.lnk lub dowolny plik.",
-"Przyspieszenie", "Kolor akcentu", "Kolory akcentu, tła i własne obrazy tła",
+"Przyspieszenie", "Kolor akcentu", "Kolory akcentu, style tła i grafiki dla każdej gry",
 // 10
 "Aktywność", "Dodaj", "Dodaj grę", "Dodaj wszystkie", "Dodaj aplikację Android", "Dodaj emulator",
 "Najpierw dodaj emulator, a potem przeskanuj jego folder z ROM-ami.", "Dodaj aplikacje Android", "Dodaj emulator", "Dodaj grę",
@@ -132,7 +132,7 @@ Ink.i18n.add('pl', [
 // 290
 "Wklej tutaj klucz", "Gra / program na PC", "Gra lub program na PC",
 "Gry na PC, Steam i Epic jednym kliknięciem, emulatory i gry przeglądarkowe.",
-"Wybierz kolor akcentu i styl tła, użyj własnego zdjęcia za biblioteką i ustaw tło dla każdej gry.",
+"Wybierz kolor akcentu i styl tła oraz pokazuj grafikę każdej gry za biblioteką.",
 "Wybierz inną kartę lub dodaj więcej gier.", "Wybierz aplikację", "Platforma", "Etykieta platformy", "Graj",
 // 300
 "Odtwarzaj / pauzuj", "Odtwarzaj / pauzuj muzykę", "Grano przed chwilą", "Gracz",
@@ -213,4 +213,6 @@ Ink.i18n.add('pl', [
 // 470
 "Masz SofaBox Pro. Dziękujemy za wsparcie SofaBox!", "Wszystko gotowe!", "Twoje kolory i tła", "Twoje gry z Epic są już w bibliotece.",
 "Twoja biblioteka jest pusta", "Układ twojej biblioteki", "Twoje gry ze Steam są już w bibliotece.",
+// 477
+"Obraz tła", "Jeden własny obraz za całą biblioteką. Pro dodaje kolory akcentu, style tła i grafiki dla każdej gry.", "Usuń wszystkie grafiki", "Usuwa okładki i tła wszystkich gier, aby zacząć od nowa. Gry pozostają w bibliotece.", "Usunąć wszystkie grafiki?", "Okładki i tła wszystkich gier zostaną usunięte. Gry pozostają w bibliotece.", "Usunięto grafiki ze wszystkich gier.", "Usunięto obraz tła.",
 ]);

@@ -4,7 +4,7 @@ Ink.i18n.add('it', [
 "★ Pro", "★ PRO", "★ SofaBox Pro", "✓ Il servizio del tasto Home è attivo.", "Orologio 24 ore",
 "Una pagina web (cloud gaming, giochi da browser…) o un link di un'app.",
 "Una pagina web, un link di uno store (Steam, Epic, GOG Galaxy, Xbox), un collegamento .url/.lnk o qualsiasi file.",
-"Accelerazione", "Colore principale", "Colori principali, sfondi e le tue immagini di sfondo",
+"Accelerazione", "Colore principale", "Colori d’accento, stili di sfondo e immagini per ogni gioco",
 // 10
 "Attività", "Aggiungi", "Aggiungi un gioco", "Aggiungi tutti", "Aggiungi un'app Android", "Aggiungi un emulatore",
 "Prima aggiungi un emulatore, poi analizza la sua cartella di ROM.", "Aggiungi app Android", "Aggiungi emulatore", "Aggiungi gioco",
@@ -132,7 +132,7 @@ Ink.i18n.add('it', [
 // 290
 "Incolla qui la chiave", "Gioco / programma per PC", "Gioco o programma per PC",
 "Giochi per PC, Steam ed Epic con un clic, emulatori e giochi web.",
-"Scegli un colore principale e uno stile di sfondo, usa una tua foto dietro la libreria e imposta uno sfondo per ogni gioco.",
+"Scegli un colore d’accento e uno stile di sfondo, e mostra l’immagine di ogni gioco dietro la libreria.",
 "Scegli un'altra scheda o aggiungi altri giochi.", "Scegli app", "Piattaforma", "Etichetta piattaforma", "Gioca",
 // 300
 "Riproduci / pausa", "Riproduci / metti in pausa la musica", "Giocato poco fa", "Giocatore",
@@ -213,4 +213,6 @@ Ink.i18n.add('it', [
 // 470
 "Hai SofaBox Pro. Grazie per sostenere SofaBox!", "Tutto pronto!", "I tuoi colori e sfondi", "I tuoi giochi Epic sono già nella libreria.",
 "La tua libreria è vuota", "Layout della tua libreria", "I tuoi giochi Steam sono già nella libreria.",
+// 477
+"Immagine di sfondo", "Una tua immagine dietro tutta la libreria. Pro aggiunge colori d’accento, stili di sfondo e immagini per ogni gioco.", "Rimuovi tutte le immagini", "Rimuove copertine e sfondi di tutti i giochi, per ricominciare da capo. I tuoi giochi restano nella libreria.", "Rimuovere tutte le immagini?", "Copertine e sfondi di tutti i tuoi giochi vengono rimossi. I tuoi giochi restano nella libreria.", "Immagini rimosse da tutti i giochi.", "Immagine di sfondo rimossa.",
 ]);

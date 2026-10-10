@@ -4,7 +4,7 @@ Ink.i18n.add('pt', [
 "★ Pro", "★ PRO", "★ SofaBox Pro", "✓ O serviço do botão Home está ativado.", "Relógio de 24 horas",
 "Uma página da web (jogos na nuvem, jogos de navegador…) ou um link de app.",
 "Uma página da web, um link de loja (Steam, Epic, GOG Galaxy, Xbox), um atalho .url/.lnk ou qualquer arquivo.",
-"Aceleração", "Cor de destaque", "Cores de destaque, fundos e suas próprias imagens de fundo",
+"Aceleração", "Cor de destaque", "Cores de destaque, estilos de fundo e arte para cada jogo",
 // 10
 "Atividade", "Adicionar", "Adicionar um jogo", "Adicionar todos", "Adicionar um app Android", "Adicionar um emulador",
 "Adicione um emulador primeiro e depois escaneie a pasta de ROMs dele.", "Adicionar apps Android", "Adicionar emulador", "Adicionar jogo",
@@ -132,7 +132,7 @@ Ink.i18n.add('pt', [
 // 290
 "Cole sua chave aqui", "Jogo / programa de PC", "Jogo ou programa de PC",
 "Jogos de PC, Steam e Epic com um clique, emuladores e jogos da web.",
-"Escolha uma cor de destaque e um estilo de fundo, use sua própria foto atrás da biblioteca e defina um fundo para cada jogo.",
+"Escolha uma cor de destaque e um estilo de fundo, e mostre a arte de cada jogo atrás da biblioteca.",
 "Escolha outra aba ou adicione mais jogos.", "Escolher app", "Plataforma", "Rótulo da plataforma", "Jogar",
 // 300
 "Reproduzir / pausar", "Reproduzir / pausar música", "Jogado agora mesmo", "Jogador",
@@ -213,4 +213,6 @@ Ink.i18n.add('pt', [
 // 470
 "Você tem o SofaBox Pro. Obrigado por apoiar o SofaBox!", "Tudo pronto!", "Suas cores e fundos", "Seus jogos da Epic já estão na biblioteca.",
 "Sua biblioteca está vazia", "Layout da sua biblioteca", "Seus jogos da Steam já estão na biblioteca.",
+// 477
+"Imagem de fundo", "Uma imagem sua atrás de toda a biblioteca. O Pro adiciona cores de destaque, estilos de fundo e arte para cada jogo.", "Remover todas as imagens", "Remove as capas e os fundos de todos os jogos para recomeçar do zero. Seus jogos continuam na biblioteca.", "Remover todas as imagens?", "As capas e os fundos de todos os seus jogos serão removidos. Seus jogos continuam na biblioteca.", "Imagens removidas de todos os jogos.", "Imagem de fundo removida.",
 ]);
