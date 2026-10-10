@@ -42,7 +42,7 @@ Ink.i18n.add('fr', [
 "Nom de la collection", "Collections", "Couleurs et fond",
 // 100
 "Séparées par des virgules. Chaque collection devient un onglet.", "Mode console", "Étagère console (une rangée)",
-"Étagère console ou grille, tuiles paysage, jaquette ou carrées, et n’importe quelle taille.", "Continuer en gratuit",
+"Étagère de console ou grille, vignettes paysage, jaquette ou carrées, de toute taille, avec ou sans titres.", "Continuer en gratuit",
 "Contrôlez votre téléphone avec une manette", "Manette", "Manette connectée", "Bouton Home de la manette", "Mode manette",
 // 110
 "Manettes", "Commandes en mode souris", "Impossible de joindre SteamGridDB.", "Impossible de lancer le jeu.", "Impossible de passer au jeu.",
@@ -192,7 +192,7 @@ Ink.i18n.add('fr', [
 "Plus vous maintenez le stick à fond, plus le pointeur va vite : précis pour les petits mouvements, rapide pour traverser l’écran.",
 "Le bouton Home du téléphone ramène toujours à SofaBox.", "L’émulateur de ce jeu a été supprimé. Modifiez le jeu pour en choisir un.",
 "Cela remplace tous les jeux, émulateurs et paramètres par ceux du fichier importé.", "Couleur de la tuile",
-"Disposition, forme et taille des tuiles", "Forme des tuiles",
+"Disposition, forme, taille et titres des vignettes", "Forme des tuiles",
 // 430
 "Taille des tuiles", "Titre", "Titre ou plateforme",
 "Pour fermer complètement les jeux, activez « Bouton Home de SofaBox » dans Paramètres → Système.", "Activer",
@@ -217,4 +217,6 @@ Ink.i18n.add('fr', [
 "Image de fond", "Une image à vous derrière toute la bibliothèque. Pro ajoute les couleurs d’accent, les styles de fond et les illustrations de chaque jeu.", "Supprimer toutes les illustrations", "Supprime les jaquettes et les images de fond de tous les jeux, pour repartir de zéro. Vos jeux restent dans la bibliothèque.", "Supprimer toutes les illustrations ?", "Les jaquettes et les images de fond de tous vos jeux sont supprimées. Vos jeux restent dans la bibliothèque.", "Illustrations supprimées de tous les jeux.", "Image de fond supprimée.",
 // 485
 "Vous permet de contrôler le téléphone avec la manette : bouton Home, mode souris, attribution des boutons, ouverture automatique sur TV/DeX et fermeture complète des jeux.",
+// 486
+"Titres sous les vignettes", "Toujours", "Seulement le jeu sélectionné", "Jamais",
 ]);

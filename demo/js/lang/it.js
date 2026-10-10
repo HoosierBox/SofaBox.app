@@ -42,7 +42,7 @@ Ink.i18n.add('it', [
 "Nome della raccolta", "Raccolte", "Colori e sfondo",
 // 100
 "Separate da virgole. Ogni raccolta diventa una scheda.", "Modalità console", "Scaffale console (una fila)",
-"Scaffale console o griglia, riquadri orizzontali, a copertina o quadrati, e di qualsiasi dimensione.", "Continua con la versione gratuita",
+"Scaffale da console o griglia, riquadri orizzontali, copertina o quadrati, di qualsiasi dimensione, con o senza titoli.", "Continua con la versione gratuita",
 "Controlla il telefono con un controller", "Controller", "Controller collegato", "Tasto Home del controller", "Modalità controller",
 // 110
 "Controller", "Comandi in modalità mouse", "Impossibile raggiungere SteamGridDB.", "Impossibile avviare il gioco.", "Impossibile passare al gioco.",
@@ -192,7 +192,7 @@ Ink.i18n.add('it', [
 "Più a lungo tieni la levetta tutta inclinata, più veloce va il puntatore: preciso per i piccoli movimenti, rapido per attraversare lo schermo.",
 "Il tasto Home del telefono riporta sempre a SofaBox.", "L'emulatore di questo gioco è stato eliminato. Modifica il gioco per sceglierne uno.",
 "Sostituisce tutti i giochi, gli emulatori e le impostazioni con quelli del file importato.", "Colore del riquadro",
-"Layout, forma e dimensione dei riquadri", "Forma del riquadro",
+"Layout, forma, dimensione e titoli dei riquadri", "Forma del riquadro",
 // 430
 "Dimensione del riquadro", "Titolo", "Titolo o piattaforma",
 "Per chiudere del tutto i giochi, attiva \"Tasto Home di SofaBox\" in Impostazioni → Sistema.", "Attiva",
@@ -217,4 +217,6 @@ Ink.i18n.add('it', [
 "Immagine di sfondo", "Una tua immagine dietro tutta la libreria. Pro aggiunge colori d’accento, stili di sfondo e immagini per ogni gioco.", "Rimuovi tutte le immagini", "Rimuove copertine e sfondi di tutti i giochi, per ricominciare da capo. I tuoi giochi restano nella libreria.", "Rimuovere tutte le immagini?", "Copertine e sfondi di tutti i tuoi giochi vengono rimossi. I tuoi giochi restano nella libreria.", "Immagini rimosse da tutti i giochi.", "Immagine di sfondo rimossa.",
 // 485
 "Ti permette di controllare il telefono con il controller: tasto Home, modalità mouse, mappatura tasti, apertura automatica su TV/DeX e chiusura completa dei giochi.",
+// 486
+"Titoli sotto i riquadri", "Sempre", "Solo il gioco selezionato", "Mai",
 ]);

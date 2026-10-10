@@ -42,7 +42,7 @@ Ink.i18n.add('pt', [
 "Nome da coleção", "Coleções", "Cores e fundo",
 // 100
 "Separadas por vírgula. Cada coleção vira uma aba.", "Modo console", "Prateleira de console (uma fileira)",
-"Prateleira de console ou grade, blocos horizontais, de capa ou quadrados, e qualquer tamanho.", "Continuar com a versão gratuita",
+"Prateleira de console ou grade, blocos horizontais, de capa ou quadrados, de qualquer tamanho, com ou sem títulos.", "Continuar com a versão gratuita",
 "Controle seu celular com um controle", "Controle", "Controle conectado", "Botão Home do controle", "Modo controle",
 // 110
 "Controles", "Comandos no modo mouse", "Não foi possível acessar o SteamGridDB.", "Não foi possível iniciar o jogo.", "Não foi possível mudar para o jogo.",
@@ -192,7 +192,7 @@ Ink.i18n.add('pt', [
 "Quanto mais tempo você segura o analógico até o fim, mais rápido o ponteiro vai: preciso para movimentos pequenos, rápido para atravessar a tela.",
 "O botão Home do celular sempre volta para o SofaBox.", "O emulador deste jogo foi excluído. Edite o jogo para escolher outro.",
 "Isto substitui todos os jogos, emuladores e configurações pelos do arquivo importado.", "Cor do bloco",
-"Layout, formato e tamanho dos blocos", "Formato do bloco",
+"Layout, formato, tamanho e títulos dos blocos", "Formato do bloco",
 // 430
 "Tamanho do bloco", "Título", "Título ou plataforma",
 "Para fechar jogos por completo, ative \"Botão Home do SofaBox\" em Configurações → Sistema.", "Ativar",
@@ -217,4 +217,6 @@ Ink.i18n.add('pt', [
 "Imagem de fundo", "Uma imagem sua atrás de toda a biblioteca. O Pro adiciona cores de destaque, estilos de fundo e arte para cada jogo.", "Remover todas as imagens", "Remove as capas e os fundos de todos os jogos para recomeçar do zero. Seus jogos continuam na biblioteca.", "Remover todas as imagens?", "As capas e os fundos de todos os seus jogos serão removidos. Seus jogos continuam na biblioteca.", "Imagens removidas de todos os jogos.", "Imagem de fundo removida.",
 // 485
 "Permite controlar o celular com o controle: botão Home, modo mouse, mapeamento de botões, abrir na TV/DeX automaticamente e fechar jogos por completo.",
+// 486
+"Títulos abaixo dos blocos", "Sempre", "Só o jogo selecionado", "Nunca",
 ]);

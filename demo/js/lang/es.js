@@ -42,7 +42,7 @@ Ink.i18n.add('es', [
 "Nombre de la colección", "Colecciones", "Colores y fondo",
 // 100
 "Separadas por comas. Cada colección se convierte en una pestaña.", "Modo consola", "Estante de consola (una fila)",
-"Estante de consola o cuadrícula, mosaicos horizontales, de carátula o cuadrados, y cualquier tamaño.", "Seguir con la versión gratuita",
+"Estante de consola o cuadrícula, fichas horizontales, de carátula o cuadradas, de cualquier tamaño, con o sin títulos.", "Seguir con la versión gratuita",
 "Controla tu teléfono con un mando", "Mando", "Mando conectado", "Botón Home del mando", "Modo mando",
 // 110
 "Mandos", "Controles en modo ratón", "No se pudo conectar con SteamGridDB.", "No se pudo iniciar el juego.", "No se pudo cambiar al juego.",
@@ -192,7 +192,7 @@ Ink.i18n.add('es', [
 "Cuanto más tiempo mantengas el stick al máximo, más rápido va el puntero: preciso para movimientos pequeños, rápido para cruzar la pantalla.",
 "El botón Home del teléfono siempre vuelve a SofaBox.", "Se eliminó el emulador de este juego. Edita el juego para elegir otro.",
 "Esto reemplaza todos los juegos, emuladores y ajustes por los del archivo importado.", "Color del mosaico",
-"Diseño, forma y tamaño de los mosaicos", "Forma del mosaico",
+"Diseño, forma, tamaño y títulos de las fichas", "Forma del mosaico",
 // 430
 "Tamaño del mosaico", "Título", "Título o plataforma",
 "Para cerrar los juegos por completo, activa \"Botón Home de SofaBox\" en Ajustes → Sistema.", "Activar",
@@ -217,4 +217,6 @@ Ink.i18n.add('es', [
 "Imagen de fondo", "Una imagen tuya detrás de toda la biblioteca. Pro añade colores de acento, estilos de fondo y arte para cada juego.", "Quitar todas las imágenes", "Quita las portadas y los fondos de todos los juegos para empezar de cero. Tus juegos siguen en la biblioteca.", "¿Quitar todas las imágenes?", "Se quitan las portadas y los fondos de todos tus juegos. Tus juegos siguen en la biblioteca.", "Imágenes quitadas de todos los juegos.", "Imagen de fondo quitada.",
 // 485
 "Te permite controlar el teléfono con el mando: botón Home, modo ratón, asignación de botones, abrir en TV/DeX automáticamente y cerrar juegos por completo.",
+// 486
+"Títulos bajo las fichas", "Siempre", "Solo el juego seleccionado", "Nunca",
 ]);

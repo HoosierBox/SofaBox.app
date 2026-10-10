@@ -42,7 +42,7 @@ Ink.i18n.add('pl', [
 "Nazwa kolekcji", "Kolekcje", "Kolory i tło",
 // 100
 "Rozdzielone przecinkami. Każda kolekcja staje się kartą.", "Tryb konsoli", "Półka konsoli (jeden rząd)",
-"Półka konsoli lub siatka, kafelki poziome, okładki lub kwadraty, w dowolnym rozmiarze.", "Kontynuuj w wersji darmowej",
+"Półka konsoli lub siatka, kafelki poziome, okładkowe lub kwadratowe, w dowolnym rozmiarze, z tytułami lub bez.", "Kontynuuj w wersji darmowej",
 "Steruj telefonem za pomocą kontrolera", "Kontroler", "Kontroler podłączony", "Przycisk Home kontrolera", "Tryb kontrolera",
 // 110
 "Kontrolery", "Sterowanie w trybie myszy", "Nie można połączyć się z SteamGridDB.", "Nie można uruchomić gry.", "Nie można przełączyć na grę.",
@@ -192,7 +192,7 @@ Ink.i18n.add('pl', [
 "Im dłużej trzymasz gałkę wychyloną do końca, tym szybciej porusza się wskaźnik: precyzyjnie przy małych ruchach, szybko przez cały ekran.",
 "Przycisk Home telefonu zawsze wraca do SofaBox.", "Emulator tej gry został usunięty. Edytuj grę, aby wybrać inny.",
 "To zastąpi wszystkie gry, emulatory i ustawienia tymi z importowanego pliku.", "Kolor kafelka",
-"Układ, kształt i rozmiar kafelków", "Kształt kafelka",
+"Układ, kształt, rozmiar i tytuły kafelków", "Kształt kafelka",
 // 430
 "Rozmiar kafelka", "Tytuł", "Tytuł lub platforma",
 "Aby całkowicie zamykać gry, włącz „Przycisk Home SofaBox” w Ustawienia → System.", "Włącz",
@@ -217,4 +217,6 @@ Ink.i18n.add('pl', [
 "Obraz tła", "Jeden własny obraz za całą biblioteką. Pro dodaje kolory akcentu, style tła i grafiki dla każdej gry.", "Usuń wszystkie grafiki", "Usuwa okładki i tła wszystkich gier, aby zacząć od nowa. Gry pozostają w bibliotece.", "Usunąć wszystkie grafiki?", "Okładki i tła wszystkich gier zostaną usunięte. Gry pozostają w bibliotece.", "Usunięto grafiki ze wszystkich gier.", "Usunięto obraz tła.",
 // 485
 "Pozwala sterować telefonem kontrolerem: przycisk Home, tryb myszy, przypisanie przycisków, automatyczne otwieranie na TV/DeX i pełne zamykanie gier.",
+// 486
+"Tytuły pod kafelkami", "Zawsze", "Tylko wybrana gra", "Nigdy",
 ]);

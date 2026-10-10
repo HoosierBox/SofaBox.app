@@ -42,7 +42,7 @@ Ink.i18n.add('nl', [
 "Naam van verzameling", "Verzamelingen", "Kleuren en achtergrond",
 // 100
 "Gescheiden door komma's. Elke verzameling wordt een tabblad.", "Consolemodus", "Consoleplank (één rij)",
-"Consoleplank of raster, liggende, hoes- of vierkante tegels, en elk formaat.", "Doorgaan met gratis",
+"Consoleplank of raster, liggende, hoes- of vierkante tegels, in elke grootte, met of zonder titels.", "Doorgaan met gratis",
 "Bedien je telefoon met een controller", "Controller", "Controller verbonden", "Home-knop van de controller", "Controllermodus",
 // 110
 "Controllers", "Bediening in muismodus", "Kan SteamGridDB niet bereiken.", "Kan de game niet starten.", "Kan niet naar de game wisselen.",
@@ -192,7 +192,7 @@ Ink.i18n.add('nl', [
 "Hoe langer je de stick helemaal opzij houdt, hoe sneller de aanwijzer gaat: precies voor kleine bewegingen, snel over het hele scherm.",
 "De Home-knop van de telefoon gaat altijd terug naar SofaBox.", "De emulator van deze game is verwijderd. Bewerk de game om er een te kiezen.",
 "Dit vervangt alle games, emulators en instellingen door die uit het geïmporteerde bestand.", "Tegelkleur",
-"Indeling, vorm en grootte van tegels", "Tegelvorm",
+"Indeling, vorm, grootte en titels van tegels", "Tegelvorm",
 // 430
 "Tegelgrootte", "Titel", "Titel of platform",
 "Zet 'SofaBox Home-knop' aan in Instellingen → Systeem om games volledig te sluiten.", "Aanzetten",
@@ -217,4 +217,6 @@ Ink.i18n.add('nl', [
 "Achtergrondafbeelding", "Eén eigen afbeelding achter de hele bibliotheek. Pro voegt accentkleuren, achtergrondstijlen en afbeeldingen per game toe.", "Alle afbeeldingen verwijderen", "Verwijdert de covers en achtergronden van alle games, zodat je opnieuw kunt beginnen. Je games blijven in je bibliotheek.", "Alle afbeeldingen verwijderen?", "De covers en achtergronden van al je games worden verwijderd. Je games blijven in je bibliotheek.", "Afbeeldingen van alle games verwijderd.", "Achtergrondafbeelding verwijderd.",
 // 485
 "Bedien je telefoon met je controller: Home-knop, muismodus, knoptoewijzing, automatisch openen op tv/DeX en games volledig sluiten.",
+// 486
+"Titels onder tegels", "Altijd", "Alleen de geselecteerde game", "Nooit",
 ]);

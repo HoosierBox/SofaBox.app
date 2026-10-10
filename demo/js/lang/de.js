@@ -42,7 +42,7 @@ Ink.i18n.add('de', [
 "Name der Sammlung", "Sammlungen", "Farben & Hintergrund",
 // 100
 "Durch Kommas getrennt. Jede Sammlung wird ein Tab.", "Konsolenmodus", "Konsolenregal (eine Reihe)",
-"Konsolenregal oder Raster, Kacheln im Quer-, Cover- oder Quadratformat und jede Größe.", "Kostenlos weiter",
+"Konsolen-Regal oder Raster, Quer-, Cover- oder quadratische Kacheln in jeder Größe, mit oder ohne Titel.", "Kostenlos weiter",
 "Steuere dein Handy mit einem Controller", "Controller", "Controller verbunden", "Home-Taste am Controller", "Controller-Modus",
 // 110
 "Controller", "Steuerung im Mausmodus", "SteamGridDB ist nicht erreichbar.", "Das Spiel konnte nicht gestartet werden.", "Wechsel zum Spiel nicht möglich.",
@@ -192,7 +192,7 @@ Ink.i18n.add('de', [
 "Je länger du den Stick ganz zur Seite hältst, desto schneller wird der Zeiger: präzise für kleine Bewegungen, schnell über den ganzen Bildschirm.",
 "Die Home-Taste des Handys führt immer zu SofaBox.", "Der Emulator dieses Spiels wurde gelöscht. Bearbeite das Spiel, um einen zu wählen.",
 "Dadurch werden alle Spiele, Emulatoren und Einstellungen durch die importierte Datei ersetzt.", "Kachelfarbe",
-"Layout, Form und Größe der Kacheln", "Kachelform",
+"Kachel-Layout, -Form, -Größe und -Titel", "Kachelform",
 // 430
 "Kachelgröße", "Titel", "Titel oder Plattform",
 "Um Spiele vollständig zu schließen, aktiviere „SofaBox Home-Taste“ unter Einstellungen → System.", "Aktivieren",
@@ -217,4 +217,6 @@ Ink.i18n.add('de', [
 "Hintergrundbild", "Ein eigenes Bild hinter der ganzen Bibliothek. Pro bietet zusätzlich Akzentfarben, Hintergrundstile und Bilder für jedes Spiel.", "Alle Bilder entfernen", "Entfernt die Cover und Hintergrundbilder aller Spiele, damit du neu anfangen kannst. Deine Spiele bleiben in der Bibliothek.", "Alle Bilder entfernen?", "Die Cover und Hintergrundbilder aller deiner Spiele werden entfernt. Deine Spiele bleiben in der Bibliothek.", "Bilder aller Spiele entfernt.", "Hintergrundbild entfernt.",
 // 485
 "Steuere dein Handy mit dem Controller: Home-Taste, Mausmodus, Tastenbelegung, automatisches Öffnen auf TV/DeX und vollständiges Schließen von Spielen.",
+// 486
+"Titel unter den Kacheln", "Immer", "Nur das ausgewählte Spiel", "Nie",
 ]);
