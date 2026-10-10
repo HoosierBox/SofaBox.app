@@ -151,7 +151,11 @@ footer a:hover { color: var(--text); }
 }
 @media (max-width: 680px) {
   body { font-size: 16px; }
-  .nav-links a:not(.btn) { display: none; }
+  .nav .wrap { gap: 10px; }
+  .brand small { display: none; }
+  .nav-links { overflow-x: auto; scrollbar-width: none; gap: 2px; min-width: 0; }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { padding: 8px 9px; font-size: 14px; white-space: nowrap; }
   .hero { padding-top: 60px; }
   .grid, .steps, .downloads { grid-template-columns: 1fr; }
   section { padding: 64px 0; }
