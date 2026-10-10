@@ -169,3 +169,6 @@ footer a:hover { color: var(--text); }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn { transition: none; } }
 .nav-links a.btn.primary { color: #fff; }
 .nav-links a.btn.primary:hover { background: #6a9dff; }
+
+/* Links to #demo, #features… land below the sticky header instead of under it. */
+html { scroll-padding-top: 84px; }
